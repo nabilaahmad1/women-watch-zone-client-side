@@ -1,0 +1,13 @@
+/* common css */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* background image  */
+.pic{
+    background-image: url("https://i.postimg.cc/WpynLVyw/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
