@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import Rating from "react-rating";
 
 const Review = () => {
     const [reviews, setReviews] = useState([]);
+
 
     useEffect(() => {
         fetch('https://stormy-anchorage-30026.herokuapp.com/review')
@@ -26,6 +28,11 @@ const Review = () => {
                             <img src={review.img} className="card-img-top" alt="slide-image1" height="350" />
                             <div className="card-body">
                                 <h5 className="card-title title">{review.userName}</h5>
+                                <h5 className="card-title title">Rating:</h5>
+                                <Rating
+                                    initialRating={review.rating}
+                                    randomly
+                                />
                                 <p className="card-text text-secondary">{review.description}</p>
                             </div>
                         </div>

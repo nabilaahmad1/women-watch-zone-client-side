@@ -60,20 +60,20 @@ const DashBord = () => {
                             {
                                 isAdmin &&
                                 <div className="admin-dashboard">
-                                    <Link to={`${url}/addwatch`} style={{ textDecoration: "none", padding: "10px" }}>
-                                        <li className="dashboard-menu">Add Watch</li>
+                                    <Link to={`${url}/addwatch`} style={{ textDecoration: "none" }}>
+                                        <li className="dashboard-menu mt-5">Add Watch</li>
                                     </Link>
 
-                                    <Link to={`${url}/manageorder`} style={{ textDecoration: "none", padding: "10px" }}>
-                                        <li className="dashboard-menu">Manage All Orders</li>
+                                    <Link to={`${url}/manageorder`} style={{ textDecoration: "none" }}>
+                                        <li className="dashboard-menu mt-5">Manage All Orders</li>
                                     </Link>
 
-                                    <Link to={`${url}/manageservice`} style={{ textDecoration: "none", padding: "10px" }}>
-                                        <li className="dashboard-menu">Manage All Services</li>
+                                    <Link to={`${url}/manageservice`} style={{ textDecoration: "none" }}>
+                                        <li className="dashboard-menu mt-5">Manage All Services</li>
                                     </Link>
 
-                                    <Link to={`${url}/makeadmin`} style={{ textDecoration: "none", padding: "10px" }}>
-                                        <li className="dashboard-menu">Make Admin</li>
+                                    <Link to={`${url}/makeadmin`} style={{ textDecoration: "none" }}>
+                                        <li className="dashboard-menu mt-5">Make Admin</li>
                                     </Link>
                                 </div>
                             }

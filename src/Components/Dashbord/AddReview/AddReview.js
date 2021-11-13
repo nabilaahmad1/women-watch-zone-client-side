@@ -10,6 +10,7 @@ const AddReview = () => {
 
     // adding new review to the database 
     const onSubmit = data => {
+
         console.log(data);
         axios.post('https://stormy-anchorage-30026.herokuapp.com/review', data)
             .then(res => {
@@ -28,6 +29,8 @@ const AddReview = () => {
                 <input type="text" defaultValue={user.displayName} {...register("userName")} placeholder="User Name" />
                 <br />
                 <input type="text" {...register("img")} placeholder="Image URL" />
+                <br />
+                <input type="number" {...register("rating")} placeholder="Input a rating in 1 to 5" />
                 <br />
                 <textarea type="text" {...register("description")} placeholder="Description" />
                 <br />
