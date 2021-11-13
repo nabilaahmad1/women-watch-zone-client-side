@@ -1,13 +1,17 @@
 /* title  */
 .navbar-light .title{
-    color: white;
+    color: black;
     font-weight: 900;
 }
 .navbar-light .title:hover{
-    color: white;
+    color: black;
 }
 /* background color  */
 .background{
     background-color: rgba(218, 165, 32, 0.664);
+    color: black;
+}
+.button{
+    background: rgba(160, 105, 37, 1);
     color: white;
 }

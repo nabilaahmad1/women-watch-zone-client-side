@@ -18,13 +18,13 @@ const MakeAdmin = () => {
     }
     return (
         <div className="container-fluid">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Make Admin</h1>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
                 <input type="email" {...register("email")} placeholder="Email" />
                 <br />
-                <input className="btn background rounded-pill mt-3 px-5" type="submit" value="Make Admin" />
+                <input className="btn button rounded-pill mt-3 px-5" type="submit" value="Make Admin" />
             </form>
 
         </div>

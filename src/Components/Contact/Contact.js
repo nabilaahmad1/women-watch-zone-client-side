@@ -5,7 +5,7 @@ const Contact = () => {
         <div className="container-fluid my-5 py-5">
             {/* heading  */}
             <div className="heading mb-5">
-                <h1 className="title lh-base fw-bolder background1">Contact</h1>
+                <h1 className="title lh-base fw-bolder">Contact</h1>
             </div>
             {/* contact form  */}
             <div className="container">
@@ -35,7 +35,7 @@ const Contact = () => {
                     </div>
                     <div className="col-12">
                         {/* <!-- Button trigger modal --> */}
-                        <button className="btn btn-dark rounded-pill px-5" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit form</button>
+                        <button className="btn button rounded-pill px-5" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit form</button>
 
                         {/* <!-- Modal --> */}
                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,8 +49,8 @@ const Contact = () => {
                                         <p>From Submited</p>
                                     </div>
                                     <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary px-5 rounded-pill" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" className="btn btn-light px-5 rounded-pill">Ok</button>
+                                        <button type="button" className="btn button px-5 rounded-pill" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" className="btn button px-5 rounded-pill">Ok</button>
                                     </div>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@ const PageNotFound = () => {
         <div className="container-fluid my-5">
             <img src={img} alt="error-pagenotfound" className="img-fluid w-100 h-100" />
             <Link to="/home">
-                <button type="button" className="btn btn-primary rounded-pill mt-3 px-5 me-3">Go Back</button>
+                <button type="button" className="btn button rounded-pill mt-3 px-5 me-3">Go Back</button>
             </Link>
         </div>
     );

@@ -46,19 +46,20 @@ const MyOrder = () => {
                 {watch.map(services => <div className="col-12 mb-4"
                     key={services._id}
                 >
-                    <div className="card background1 py-3">
+                    <div className="card py-3 shadow bg-white rounded">
                         <div className="card-body">
-                            <h4 className="text-light">User Details</h4>
-                            <h5 className="text-light">User Name: {services?.userName}</h5>
-                            <h5 className="text-light">Email: {services?.email}</h5>
-                            <h5 className="card-title text-light ">Adress: {services?.address}</h5>
-                            <h5 className="card-title text-light ">Phone Number: {services?.phone}</h5>
-                            <h4 className="text-light mt-5">watch Details</h4>
-                            <h5 className="card-title text-light ">watch Name: {services?.serviceName}</h5>
-                            <h5 className="card-title text-light ">watch No: {services?.key}</h5>
+                            <h4 className="text-dark">User Details</h4>
+                            <h5 className="text-dark">User Name: {services?.userName}</h5>
+                            <h5 className="text-dark">Email: {services?.email}</h5>
+                            <h5 className="card-title text-dark">Adress: {services?.address}</h5>
+                            <h5 className="card-title text-dark ">Phone Number: {services?.phone}</h5>
+                            <h4 className="text-dark mt-5">watch Details</h4>
+                            <h5 className="card-title text-dark">watch Name: {services?.serviceName}</h5>
+                            <h5 className="card-title text-dark">watch No: {services?.key}</h5>
+                            <h5 className="card-title text-dark ">Order Status: {services?.status}</h5>
                             <button
                                 onClick={() => handleDeleteOrder(services._id)}
-                                className="btn background rounded-pill mt-3 px-5 me-3">Delete</button>
+                                className="btn button rounded-pill mt-3 px-5 me-3">Delete</button>
                         </div>
                     </div >
                 </div >

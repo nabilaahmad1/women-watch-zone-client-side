@@ -4,7 +4,7 @@ import Watches from '../Watches/Watches';
 
 const Watch = () => {
     const [services] = useService();
-    // const [limit, setLimit] = useState(6);
+
     return (
         <div className="container-fluid">
             <div className="heading mb-5">

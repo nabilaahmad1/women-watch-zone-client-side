@@ -24,7 +24,7 @@ const ManageService = () => {
     }
     return (
         <div className="container-fluid">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Manage All Order</h1>
             </div>
             <h2 className="text-dark">Total No. of Order: {services.length}</h2>
@@ -33,13 +33,13 @@ const ManageService = () => {
                     key={service._id}
                     service={service}
                 >
-                    <div className="card background1 py-3">
+                    <div className="card py-3 shadow bg-white rounded">
                         <div className="card-body">
-                            <h4 className="text-light mt-5">Watch Details</h4>
+                            <h4 className="text-dark">Watch Details</h4>
                             <h5 className="card-title text-dark lh-base fw-bolder ">{service.serviceName}</h5>
                             <p className="card-text text-dark lh-sm mt-3 ">{service.description}</p>
                             <p className="card-text text-dark lh-sm mt-3">Watch Price: ${service.price}</p>
-                            <button onClick={() => { handleDeleteOrder(service._id) }} className="btn background rounded-pill mt-3 px-5 me-3">Delete</button>
+                            <button onClick={() => { handleDeleteOrder(service._id) }} className="btn button rounded-pill mt-3 px-5 me-3">Delete</button>
                         </div>
                     </div>
                 </div>

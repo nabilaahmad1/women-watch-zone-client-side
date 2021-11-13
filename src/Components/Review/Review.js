@@ -22,11 +22,11 @@ const Review = () => {
                         key={review._id}
                         review={review}
                     >
-                        <div className="card h-100 background" style={{ borderRadius: "20px" }}>
-                            <img src={review.img} className="card-img-top" alt="slide-image1" height="350" style={{ borderRadius: "20px" }} />
+                        <div className="card h-100 shadow bg-white rounded">
+                            <img src={review.img} className="card-img-top" alt="slide-image1" height="350" />
                             <div className="card-body">
                                 <h5 className="card-title title">{review.userName}</h5>
-                                <p className="card-text">{review.description}</p>
+                                <p className="card-text text-secondary">{review.description}</p>
                             </div>
                         </div>
                     </div>

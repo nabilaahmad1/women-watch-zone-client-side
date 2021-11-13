@@ -21,7 +21,7 @@ const AddReview = () => {
     }
     return (
         <div className="container-fluid">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Add New Review</h1>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
@@ -31,7 +31,7 @@ const AddReview = () => {
                 <br />
                 <textarea type="text" {...register("description")} placeholder="Description" />
                 <br />
-                <input className="btn background rounded-pill mt-3 px-5" type="submit" value="Add Review" />
+                <input className="btn button rounded-pill mt-3 px-5" type="submit" value="Add Review" />
             </form>
         </div>
     );

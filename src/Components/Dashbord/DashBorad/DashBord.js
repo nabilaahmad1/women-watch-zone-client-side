@@ -10,6 +10,7 @@ import ManageOrder from '../ManageOrder/ManageOrder';
 import ManageService from '../ManageService/ManageService';
 import MyOrder from '../MyOrder/MyOrder';
 import Pay from '../Pay/Pay';
+import './DashBord.css'
 
 const DashBord = () => {
     let { path, url } = useRouteMatch();
@@ -31,50 +32,52 @@ const DashBord = () => {
 
     return (
         <div>
-            <div className="dashboard-container ">
+            <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-3 ">
-                        <div className="dashboard">
-                            <h5>Dashboard</h5>
-                            <Link to={`${url}`}>
+                    <div className="col-md-3">
+                        <div className="dashboard shadow">
+                            <h2 className="lh-base fs-2 pt-5">Dashboard</h2>
+                            <Link to={`${url}`} style={{ textDecoration: "none" }}>
                                 <li className="dashboard-menu mt-5">Home</li>
                             </Link>
                             {
-                                !isAdmin && <div className="user-dashbord">
-                                    <Link to={`${url}/pay`}>
+                                !isAdmin &&
+                                <div className="user-dashbord">
+                                    <Link to={`${url}/pay`} style={{ textDecoration: "none" }}>
                                         <li className="dashboard-menu mt-5">Pay</li>
                                     </Link>
 
-                                    <Link to={`${url}/myorder`}>
+                                    <Link to={`${url}/myorder`} style={{ textDecoration: "none" }}>
                                         <li className="dashboard-menu mt-5">My Order</li>
                                     </Link>
 
-                                    <Link to={`${url}/addreview`}>
+                                    <Link to={`${url}/addreview`} style={{ textDecoration: "none" }}>
                                         <li className="dashboard-menu mt-5">Add Review</li>
                                     </Link>
                                 </div>
                             }
 
                             {
-                                isAdmin && <div className="admin-dashboard">
-                                    <Link to={`${url}/addwatch`}>
+                                isAdmin &&
+                                <div className="admin-dashboard">
+                                    <Link to={`${url}/addwatch`} style={{ textDecoration: "none", padding: "10px" }}>
                                         <li className="dashboard-menu">Add Watch</li>
                                     </Link>
 
-                                    <Link to={`${url}/manageorder`}>
+                                    <Link to={`${url}/manageorder`} style={{ textDecoration: "none", padding: "10px" }}>
                                         <li className="dashboard-menu">Manage All Orders</li>
                                     </Link>
 
-                                    <Link to={`${url}/manageservice`}>
+                                    <Link to={`${url}/manageservice`} style={{ textDecoration: "none", padding: "10px" }}>
                                         <li className="dashboard-menu">Manage All Services</li>
                                     </Link>
 
-                                    <Link to={`${url}/makeadmin`}>
+                                    <Link to={`${url}/makeadmin`} style={{ textDecoration: "none", padding: "10px" }}>
                                         <li className="dashboard-menu">Make Admin</li>
                                     </Link>
                                 </div>
                             }
-                            <Link to="/home">
+                            <Link to="/home" style={{ textDecoration: "none" }}>
                                 <li className="dashboard-menu mt-5" onClick={logOut}>Log Out</li>
                             </Link>
                         </div>

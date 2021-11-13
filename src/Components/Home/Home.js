@@ -5,6 +5,7 @@ import Review from '../Review/Review';
 import ShopFeature from '../ShopFeature/ShopFeature';
 import Watch from '../Watch/Watch';
 import './Home.css'
+import banner from '../../images/banner1.png'
 
 const Home = () => {
     // navigate to different url 
@@ -14,13 +15,16 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <div className="container-fluid pic py-5">
-                {/* top banner intro text  */}
-                <div className="text-start py-5">
-                    <h1 className="title lh-base fw-bolder  ms-5">Make a Statement with <br /> Your Unique Watch Style</h1>
-                    <p className="text-light lh-sm mt-3 ms-5">The life you have left is a gift. Cherish it. <br /> Enjoy it now, to the fullest. Do what matters, now.</p>
-                    <button onClick={handleClick} type="button" className="btn background rounded-pill mt-3 px-5 me-3 ms-5">Learn More</button>
+        <div className="container">
+            {/* top banner intro text  */}
+            <div className="row text-center">
+                <div className="col-lg-6 col-12">
+                    <h1 className="title lh-base fw-bolder  ms-5 text-start mt-5">Make a Statement with Your Unique Watch Style</h1>
+                    <p className="text-secondary lh-sm mt-3 ms-5 text-start">The life you have left is a gift. Cherish it. Enjoy it now, to the fullest. Do what matters, now.</p>
+                    <button onClick={handleClick} type="button" className="btn button rounded-pill mt-3 px-5 me-5">Learn More</button>
+                </div>
+                <div className="col-lg-6 col-12">
+                    <img src={banner} alt="" className="img-fluid w-75 h-75 mx-auto" />
                 </div>
             </div>
             <About></About>

@@ -19,7 +19,7 @@ const AddWatch = () => {
     }
     return (
         <div className="container-fluid">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Add New Watch</h1>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="form">
@@ -31,7 +31,7 @@ const AddWatch = () => {
                 <br />
                 <input type="number" {...register("price")} placeholder="Price" />
                 <br />
-                <input className="btn background rounded-pill mt-3 px-5" type="submit" value="Add New Watch" />
+                <input className="btn button rounded-pill mt-3 px-5" type="submit" value="Add New Watch" />
             </form>
         </div>
     );

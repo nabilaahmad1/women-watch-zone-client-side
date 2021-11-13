@@ -59,7 +59,7 @@ const Register = () => {
     const saveUser = (email, name) => {
         const user = { email, name };
 
-        fetch('http://localhost:5000/user', {
+        fetch('https://stormy-anchorage-30026.herokuapp.com/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -71,7 +71,7 @@ const Register = () => {
     return (
         <div className="container-fluid my-5 py-5">
             <div className="heading mb-5">
-                <h1 className="background lh-base fw-bolder">Register</h1>
+                <h1 className="title lh-base fw-bolder">Register</h1>
             </div>
             {/* registration from  */}
             <div className="container">
@@ -95,7 +95,7 @@ const Register = () => {
                         <label htmlFor="login" className="form-label text-danger">{error}</label>
                     </div>
                     <div className="col-12">
-                        <button type="submit" className="btn btn-primary rounded-pill mt-3 px-5 me-3">Register</button>
+                        <button type="submit" className="btn button rounded-pill mt-3 px-5 me-3">Register</button>
                     </div>
                 </form>
             </div>

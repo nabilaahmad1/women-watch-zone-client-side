@@ -1,11 +1,6 @@
-/* background shadow  */
-.background2{
-    box-shadow: 3px 3px 6px 8px #daa5205e;
-    border-radius: 20px;
-}
 /* icon css  */
 .icon{
-    color: rgba(218, 165, 32, 0.801);
+    color: rgba(160, 105, 37, 1);
     font-size: 50px;
     margin-bottom: 10px;
     margin-top: 20px;

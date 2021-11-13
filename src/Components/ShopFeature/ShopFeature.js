@@ -8,7 +8,10 @@ import brand4 from '../../images/brand4.jpg'
 const ShopFeature = () => {
     return (
         <div className="container my-5 py-3">
-            <div className="row background2 mb-5">
+            {/* service quality  */}
+            <h1 className="lh-base fw-bolder">Our Service Quality</h1>
+            <div className="row shadow bg-white rounded mb-5">
+
                 <div className="col-lg-3 col-md-6 col-12">
                     <i className="fas fa-truck icon"></i>
                     <h3>Free Delivary</h3>
@@ -30,7 +33,10 @@ const ShopFeature = () => {
                     <p>Safe Payment Way</p>
                 </div>
             </div>
-            <div className="row background2 mt-5">
+            {/* watch brands  */}
+            <h1 className="lh-base fw-bolder">Our Watch Brands</h1>
+            <div className="row shadow bg-white rounded mt-5">
+
                 <div className="col-lg-3 col-md-6 col-12">
                     <img src={brand1} alt="" className="img-fluid w-100 h-100" />
                 </div>

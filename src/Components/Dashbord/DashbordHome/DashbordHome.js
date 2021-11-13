@@ -2,7 +2,7 @@ import React from 'react';
 
 const DashbordHome = () => {
     return (
-        <div>
+        <div className="container">
             <h1>Welcome to Dashbord</h1>
         </div>
     );

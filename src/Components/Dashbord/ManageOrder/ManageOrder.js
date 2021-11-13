@@ -38,7 +38,7 @@ const ManageOrder = () => {
 
     return (
         <div className="container-fluid">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Manage All Order</h1>
             </div>
             <h2 className="text-dark">Total No. of Order: {services.length}</h2>
@@ -46,17 +46,17 @@ const ManageOrder = () => {
                 {services.map(service => <div className="col-12 mb-4"
                     key={service._id}
                 >
-                    <div className="card background1 py-3">
+                    <div className="card py-3 shadow bg-white rounded">
                         <div className="card-body">
-                            <h4 className="text-light">User Details</h4>
-                            <h5 className="text-light">User Name: {service?.userName}</h5>
-                            <h5 className="text-light">Email: {service?.email}</h5>
-                            <h4 className="text-light mt-5">Watch Details</h4>
-                            <h5 className="card-title text-light">Watch Model Name: {service?.serviceName}</h5>
-                            <h5 className="card-title text-light ">Watch Model No: {service?.key}</h5>
-                            <h5 className="card-title text-light ">Order Status: {service?.status}</h5>
-                            <button onClick={() => { handleDeleteOrder(service._id) }} className="btn background rounded-pill mt-3 px-5 me-3">Delete</button>
-                            <button onClick={() => { onSubmit(service._id) }} className="btn background rounded-pill mt-3 px-5 me-3">Update</button>
+                            <h4 className="text-dark">User Details</h4>
+                            <h5 className="text-dark">User Name: {service?.userName}</h5>
+                            <h5 className="text-dark">Email: {service?.email}</h5>
+                            <h4 className="text-dark mt-5">Watch Details</h4>
+                            <h5 className="card-title text-dark">Watch Model Name: {service?.serviceName}</h5>
+                            <h5 className="card-title text-dark">Watch Model No: {service?.key}</h5>
+                            <h5 className="card-title text-dark">Order Status: {service?.status}</h5>
+                            <button onClick={() => { handleDeleteOrder(service._id) }} className="btn button rounded-pill mt-3 px-5 me-3">Delete</button>
+                            <button onClick={() => { onSubmit(service._id) }} className="btn button rounded-pill mt-3 px-5 me-3">Update</button>
                         </div>
                     </div>
                 </div>

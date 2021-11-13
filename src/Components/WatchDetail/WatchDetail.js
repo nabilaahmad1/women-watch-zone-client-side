@@ -33,15 +33,15 @@ const WatchDetail = () => {
 
     return (
         <div className="container-fluid py-5">
-            <div className="heading mb-5 background1">
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Watch Detail</h1>
             </div>
             {/* showing details  */}
-            <div className="container">
+            <div className="container mb-5">
                 <h2 className="text-dark">User Name: {user?.displayName}</h2>
                 <h2 className="text-dark">User Email: {user?.email}</h2>
-                <div className="card mx-5 w-50 mx-auto">
-                    <img src={service?.img} className="card-img-top" alt="..." height="400" />
+                <div className="card mx-5 w-50 mx-auto shadow bg-white rounded">
+                    <img src={service?.img} className="card-img-top" alt="..." height="450" />
                     <div className="card-body">
                         <h5 className="card-title text-dark ">{service?.serviceName}</h5>
                         <h5 className="card-title text-dark ">Watch No: {service?._id}</h5>
@@ -50,7 +50,9 @@ const WatchDetail = () => {
                     </div>
                 </div>
             </div>
-            <div className="heading mb-5 background1">
+
+            <hr />
+            <div className="heading mb-5">
                 <h1 className="title lh-base fw-bolder mt-5">Place Order</h1>
             </div>
             {/* place orde form  */}
@@ -67,7 +69,7 @@ const WatchDetail = () => {
                 <br />
                 <input type="number" {...register("phone")} placeholder="Phone Number" />
                 <br />
-                <input className="btn btn-dark rounded-pill mt-3 px-5" type="submit" value="Place Order" />
+                <input className="btn button rounded-pill mt-3 px-5" type="submit" value="Place Order" />
             </form>
         </div>
     );
